@@ -19,6 +19,8 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
+#ifndef __AVR_ATmega2560__
+
 #include "FlashAsEEPROM.h"
 
 FlashStorage(eeprom_storage, EEPROM_EMULATION);
@@ -72,3 +74,5 @@ void EEPROMClass::commit()
 }
 
 EEPROMClass EEPROM;
+
+#endif
